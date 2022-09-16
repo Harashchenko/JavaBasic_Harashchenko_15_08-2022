@@ -7,47 +7,16 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        int N = 0;
-        int M = 0;
+        int N = getNumber(scanner);
+        int M = getNumber(scanner);
 
-        System.out.println("Please enter number of rows");
-        do {
-            if (scanner.hasNextInt()) {
-                N = scanner.nextInt();
-                if (N < 0) {
-                    System.out.println("Wrong data, please enter integer greater 0");
-                } else {
-                    break;
-                }
-            } else {
-                System.out.println("Wrong data, try again");
-                scanner.nextLine();
-            }
-        } while (true);
-        System.out.println("You entered number: " + N);
-
-        System.out.println("Please enter number of columns");
-        do {
-            if (scanner.hasNextInt()) {
-                M = scanner.nextInt();
-                if (M < 0) {
-                    System.out.println("Wrong data, please enter integer greater 0");
-                } else {
-                    break;
-                }
-            } else {
-                System.out.println("Wrong data, try again");
-                scanner.nextLine();
-            }
-        } while (true);
-        System.out.println("You entered number: " + M);
 
         int[][] arrayN_M = new int[N][M];
         int[][] arrayM_N = new int[M][N];
 
         for (int i = 0; i < arrayN_M.length; i++) {
             for (int j = 0; j < arrayN_M[i].length; j++) {
-                arrayN_M[i][j] = (int) (Math.random() * 101);
+                arrayN_M[i][j] = (int) (Math.random() * 21);
             }
         }
 
@@ -75,6 +44,26 @@ public class Main {
         scanner.close();
     }
 
+    static int getNumber(Scanner scanner) {
+        int temp = 0;
+        System.out.println("Please enter integer for arrays");
+        while (true) {
+            if (scanner.hasNextInt()) {
+                temp = scanner.nextInt();
+                if (temp < 0) {
+                    System.out.println("Wrong data, please enter integer greater 0");
+                } else {
+                    break;
+                }
+            } else {
+                System.out.println("Wrong data, try again");
+                scanner.nextLine();
+            }
+        }
+        return temp;
+    }
 }
+
+
 
 
