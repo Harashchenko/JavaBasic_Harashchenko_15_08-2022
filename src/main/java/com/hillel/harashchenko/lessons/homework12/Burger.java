@@ -1,7 +1,7 @@
 package com.hillel.harashchenko.lessons.homework12;
 
 public class Burger {
-    String bun = "bun ";
+    String bun;
     String meat;
     String greens;
     String mayo;
