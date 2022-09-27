@@ -101,12 +101,13 @@ public class FitnessTracker {
 
     void printAccountInfo() {
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("Fitness Tracker Person Info" + " NAME = ").append(NAME).append('\'')
+        stringBuilder.append("Fitness Tracker Person Info" + " NAME = ").append(NAME)
                 .append(", surname = ").append(surname + "," + "\n")
                 .append(" DAY_OF_BIRSDAY = ").append(DAY_OF_BIRSDAY)
                 .append(", MONTH_OF_BIRSDAY = ").append(DAY_OF_BIRSDAY)
                 .append(", YEAR_OF_BIRSDAY = ").append(YEAR_OF_BIRSDAY)
                 .append(", age = ").append(age + "," + "\n")
+                .append(" EMAIl = ").append(EMAIL)
                 .append(", PHONE_NUNBER = ").append(PHONE_NUNBER + "," + "\n")
                 .append(" weight = ").append(weight)
                 .append(", pressure = ").append(topPressure + "/" + lowerPressure)
