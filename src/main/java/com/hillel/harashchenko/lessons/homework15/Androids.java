@@ -9,7 +9,6 @@ public class Androids implements Smartphones, LinuxOS {
     @Override
     public void sms() {
         System.out.println("SMS from Android");
-
     }
 
     @Override

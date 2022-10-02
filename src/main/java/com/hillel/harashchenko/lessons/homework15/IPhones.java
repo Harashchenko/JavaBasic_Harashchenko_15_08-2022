@@ -9,7 +9,6 @@ public class IPhones implements Smartphones, IOS {
     @Override
     public void sms() {
         System.out.println("SMS from  iPhones");
-
     }
 
     @Override
