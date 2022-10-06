@@ -9,7 +9,6 @@ public enum DrinksMachine {
     COLA("Coca-Cola"),
     ;
 
-
     private String title;
 
     DrinksMachine(String title) {

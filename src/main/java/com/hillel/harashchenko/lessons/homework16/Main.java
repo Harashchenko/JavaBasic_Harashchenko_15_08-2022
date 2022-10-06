@@ -5,7 +5,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
-   static Scanner scanner = new Scanner(System.in);
+    static Scanner scanner = new Scanner(System.in);
     private static int totalCost = 0;
 
     public static void main(String[] args) {
@@ -13,6 +13,7 @@ public class Main {
         System.out.println("You select: " + CounterDrinks.counterDrinks + " drinks, total cost: " + totalCost);
         scanner.close();
     }
+
     private static void runApp() {
         do {
             DrinksMachine drinksMachine = null;
@@ -69,7 +70,8 @@ public class Main {
             }
         } while (true);
     }
-    public static void prepareDrinks(DrinksMachine drinksMachine) {
+
+    private static void prepareDrinks(DrinksMachine drinksMachine) {
         System.out.println("You are select: " + drinksMachine.getTitle() + " please wait, drinks is prepearing...");
         new CounterDrinks();
     }
